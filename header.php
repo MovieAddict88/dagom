@@ -31,9 +31,12 @@ $logo_exists = file_exists($logo_path);
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=0.25, viewport-fit=cover'>
     <meta name='apple-mobile-web-app-capable' content='yes'>
     <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='theme-color' content='#6366f1'>
+    <meta name='color-scheme' content='light'>
+    <meta name='supported-color-schemes' content='light dark'>
     <title><?php echo ucwords(str_replace('_', ' ', basename($_SERVER['PHP_SELF'], '.php'))); ?> - <?php echo htmlspecialchars($site_name); ?></title>
     <?php if ($site_icon): ?>
         <link rel='icon' href='<?php echo htmlspecialchars($site_icon); ?>' type='image/x-icon'>
